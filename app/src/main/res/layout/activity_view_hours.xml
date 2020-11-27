@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewHours">
+
+
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="25dp"/>
+
+            <EditText
+                android:id="@+id/dateStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:hint="Start date"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:inputType="none"
+                android:singleLine="true"
+                android:onClick="openCalendarStart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="45dp"/>
+
+            <EditText
+                android:id="@+id/dateEnd"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:hint="End date"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:inputType="none"
+                android:singleLine="true"
+                android:layout_marginStart="10dp"
+                android:onClick="openCalendarEnd"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:onClick="displayTable"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="85dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:onClick="backToHome"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/totalHoursDateRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/totalHoursSoFar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text=""/>
+
+
+        <TextView
+            android:id="@+id/csaCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/hoursForAward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/tableDisplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TableLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

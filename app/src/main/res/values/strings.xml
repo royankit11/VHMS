@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VHMS</string>
+    <string name="title_activity_register">Register</string>
+    <string name="RegisterText">New? <u>Register Here</u></string>
+    <string name="AwardProgram">Please Select</string>
+
+    <string name="FirstName">First Name <font fgcolor='#FF0000'>*</font></string>
+    <string name="LastName">Last Name <font fgcolor='#FF0000'>*</font></string>
+    <string name="GradeLevel">Grade Level <font fgcolor='#FF0000'>*</font></string>
+    <string name="StudentNum">Student # <font fgcolor='#FF0000'>*</font></string>
+    <string name="Username">Username <font fgcolor='#FF0000'>*</font></string>
+    <string name="Password">Password <font fgcolor='#FF0000'>*</font></string>
+    <string name="PasswordConfirm">Confirm\nPassword <font fgcolor='#FF0000'>*</font></string>
+    <string name="AwardCategory">Choose Award\nCategory <font fgcolor='#FF0000'>*</font></string>
+    <string name="localhostURL">http://10.0.0.11:5000/</string>
+</resources>

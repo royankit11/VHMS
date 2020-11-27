@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/exitbutton"
+            android:layout_gravity="right"
+            android:onClick="backToLogin"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="100dp"
+            android:text=""/>
+
+
+        <Button
+            android:onClick="goToEnter"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="100dp"
+            android:text="Enter Hours"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_orange_dark"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            android:text="View Hours"
+            android:onClick="showHours"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_red_dark"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:text="Edit Profile"
+            android:onClick="toRegisterPage"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_blue_dark"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
